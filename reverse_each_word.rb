@@ -26,3 +26,11 @@ def reverse_each_word(sentence)
   array_sentence = sentence.split(" ")
   array_sentence.collect {|word| word.reverse}.join(" ")
 end
+
+def reverse_each_word(sentence)
+  nusentence =[]
+  sentence.each do |string|
+  string.split(" ").reverse.join(" ") << nusentence
+  end
+  nusentence
+end
